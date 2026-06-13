@@ -1487,6 +1487,28 @@ figure {
   }
 }
 
+/* Uniform project grid images */
+@media screen and (min-width: 769px) {
+  /* Force a consistent height and crop images cleanly */
+  .grid-project-section {
+    overflow: hidden;
+  }
+  .grid-project-section img {
+    display: block;
+    width: 100%;
+    height: 220px; /* adjust this value if you want a taller/shorter thumbnail */
+    object-fit: cover; /* preserves aspect ratio and crops */
+  }
+}
+
+/* On small screens, let images size naturally to remain responsive */
+@media screen and (max-width: 768px) {
+  .grid-project-section img {
+    height: auto;
+    object-fit: contain;
+  }
+}
+
 .border-bottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
