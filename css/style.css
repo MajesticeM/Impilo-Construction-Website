@@ -25,14 +25,14 @@ body.impilo-offcanvas {
 }
 
 a {
-  color: #FA7E0A;
+  color: #C89D2C;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: none !important;
-  color: #FA7E0A !important;
+  color: #C89D2C !important;
 }
 
 p, ul, ol {
@@ -55,17 +55,17 @@ figure {
 
 ::-webkit-selection {
   color: #fcfcfc;
-  background: #FA7E0A;
+  background: #C89D2C;
 }
 
 ::-moz-selection {
   color: #fcfcfc;
-  background: #FA7E0A;
+  background: #C89D2C;
 }
 
 ::selection {
   color: #fcfcfc;
-  background: #FA7E0A;
+  background: #C89D2C;
 }
 
 .btn {
@@ -93,9 +93,9 @@ figure {
 }
 
 .btn-primary {
-  background: #FA7E0A;
+  background: #C89D2C;
   color: #fff;
-  border: 2px solid #FA7E0A;
+  border: 2px solid #C89D2C;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #fb8b23 !important;
@@ -103,11 +103,11 @@ figure {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #FA7E0A;
-  border: 2px solid #FA7E0A;
+  color: #C89D2C;
+  border: 2px solid #C89D2C;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #FA7E0A;
+  background: #C89D2C;
   color: #fff;
 }
 
@@ -524,7 +524,7 @@ figure {
   color: rgba(0, 0, 0, 0.9);
 }
 #impilo-logo a i {
-  color: #FA7E0A;
+  color: #C89D2C;
   font-size: 30px;
   padding-right: 12px;
 }
@@ -552,7 +552,7 @@ figure {
 }
 
 #impilo-primary-menu > li > ul li.active > a {
-  color: #FA7E0A !important;
+  color: #C89D2C !important;
 }
 #impilo-primary-menu > li > .sf-with-ul:after {
   border: none !important;
@@ -634,7 +634,7 @@ figure {
   background: none;
 }
 #impilo-primary-menu .impilo-sub-menu a:hover {
-  color: #FA7E0A !important;
+  color: #C89D2C !important;
   background: none !important;
 }
 
@@ -759,7 +759,7 @@ figure {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(250, 126, 10, 0.7);
+  background: #C89D2C
 }
 #impilo-hero .flexslider .slider-text > .slider-text-inner h2 {
   font-size: 30px;
@@ -843,7 +843,7 @@ figure {
   opacity: 1;
 }
 .grid-project:hover h3, .grid-project:focus h3 {
-  color: #FA7E0A;
+  color: #C89D2C;
 }
 
 #impilo-section {
@@ -979,10 +979,10 @@ figure {
   border-radius: 7px;
 }
 .impilo-social li a i {
-  color: #FA7E0A;
+  color: #C89D2C;
 }
 .impilo-social li a:hover {
-  color: #FA7E0A;
+  color: #C89D2C;
 }
 .impilo-social li a:hover, .impilo-social li a:active, .impilo-social li a:focus {
   outline: none;
@@ -1115,7 +1115,7 @@ figure {
 
 .impilo-social-icons > a {
   padding: 4px 10px;
-  color: #FA7E0A;
+  color: #C89D2C;
 }
 .impilo-social-icons > a i {
   font-size: 26px;
@@ -1229,7 +1229,7 @@ figure {
 }
 #footer #btn-submit {
   color: rgba(255, 255, 255, 0.9) !important;
-  background: #FA7E0A !important;
+  background: #C89D2C !important;
 }
 #footer .copy-right {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1305,14 +1305,14 @@ figure {
   color: rgba(255, 255, 255, 0.4);
 }
 #offcanvas-menu ul li a:hover {
-  color: #FA7E0A;
+  color: #C89D2C;
 }
 #offcanvas-menu ul li > .impilo-sub-menu {
   margin-top: 9px;
   padding-left: 20px;
 }
 #offcanvas-menu ul li.active > a {
-  color: #FA7E0A;
+  color: #C89D2C;
 }
 #offcanvas-menu ul .impilo-sub-menu {
   display: block !important;
@@ -1506,6 +1506,85 @@ figure {
   .grid-project-section img {
     height: auto;
     object-fit: contain;
+  }
+}
+
+/* WHY-US section: uniform card sizes, padding, and white text */
+#why-us .card {
+  /* Same minimum height so all cards line up */
+  min-height: 320px; /* adjust if you want taller cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center content vertically */
+  align-items: center;
+  padding: 1.5rem !important; /* padding for card content */
+  color: #ffffff !important; /* default: white text for dark/gold cards */
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(33,33,33,0.08), 0 2px 6px rgba(33,33,33,0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+#why-us .card .text-center {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  color: inherit;
+}
+
+#why-us .card h4,
+#why-us .card p,
+#why-us .card i {
+  color: inherit !important; /* make sure headings, paragraphs and icons inherit white */
+}
+
+/* Larger icon and spacing */
+#why-us .card i {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 12px;
+  display: block;
+}
+
+#why-us .card h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+/* small centered underline accent under the heading */
+#why-us .card h4::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  margin: 8px auto 0;
+  background: rgba(255,255,255,0.85);
+  border-radius: 2px;
+}
+
+/* Light-background cards use dark text and dark underline */
+#why-us .card.text-dark {
+  color: #222222 !important;
+}
+#why-us .card.text-dark h4::after {
+  background: #C89D2C; /* gold accent on light cards */
+}
+
+/* On hover lift slightly */
+#why-us .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(33,33,33,0.12), 0 6px 18px rgba(33,33,33,0.08);
+}
+
+@media screen and (max-width: 768px) {
+  /* Let cards size naturally on small screens and reduce min-height */
+  #why-us .card {
+    min-height: auto;
+    padding: 1rem !important;
+    justify-content: flex-start;
+    align-items: stretch;
   }
 }
 
